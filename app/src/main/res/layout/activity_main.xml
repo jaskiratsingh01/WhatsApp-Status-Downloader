@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whatsapp"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Images" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_videos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Images" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_memes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memes" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"
+        android:layout_below="@+id/tab_layout"/>
+
+</RelativeLayout>

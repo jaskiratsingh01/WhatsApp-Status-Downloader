@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/status_image"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_share_image"
+            android:backgroundTint="@color/whatsapp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Share"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_download_image"
+            android:backgroundTint="@color/whatsapp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:text="Download"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
